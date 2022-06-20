@@ -43,16 +43,19 @@
             </div>
         ); */
 
+        // const container = React.createElement("div", null, [Title,Button])
+        // ReactDOM.render(<Container/>, root);
+
+        // Render
+        /* 
         let counter = 0;
         function countUp() {
             counter = counter + 1;
             render();
         }
-
         function render() {
             ReactDOM.render(<Container/>, root);
         }
-        
         function Container() {
             return (
                 <div>
@@ -61,9 +64,18 @@
                 </div>
             );
         }
+        render(); */
 
-        // const container = React.createElement("div", null, [Title,Button])
-        // ReactDOM.render(<Container/>, root);
-        render();
+        function App() {
+            const [counter, modifier] = React.useState(0);
+            console.log(data);
+            return (
+                <div>
+                    <h3>Total clicks : {}</h3>
+                    <button>Click me</button>
+                </div>
+            );
+        }
+        ReactDOM.render(<App/>, root);
     </script>
 </html>
